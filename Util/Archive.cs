@@ -29,7 +29,7 @@ namespace Nexus.Client.Util
 		/// <remarks>
 		/// This list is used to speed up determination of whether or not a given file is an archive.
 		/// </remarks>
-		protected static List<string> m_lstNonArchiveExtensions = new List<string> { ".esp", ".esm", ".txt", ".htm", ".html", ".nif", ".dds", ".png", ".rtf", ".jpg", ".bmp", ".cs", ".xml", ".xsd", ".ico" };
+		protected static List<string> m_lstNonArchiveExtensions = new List<string> { ".esp", ".esm", ".txt", ".htm", ".html", ".nif", ".dds", ".png", ".rtf", ".jpg", ".bmp", ".cs", ".xml", ".xsd", ".ico", ".meta" };
 
 		private string m_strPath = null;
 		private SevenZipCompressor m_szcCompressor = null;

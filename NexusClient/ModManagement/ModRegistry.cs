@@ -46,6 +46,10 @@ namespace Nexus.Client.ModManagement
 			{
 				string strModPath = strMod.ToLower();
 				booExcluded = false;
+
+                if (strModPath.EndsWith(".meta"))
+                    continue;
+
 				foreach (string strExclusion in lstExludedPaths)
 					if (strModPath.Replace(Path.AltDirectorySeparatorChar, Path.DirectorySeparatorChar).StartsWith(strExclusion))
 					{
