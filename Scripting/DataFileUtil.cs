@@ -45,7 +45,7 @@ namespace Nexus.Client.ModManagement.Scripting
 		{
 			if (p_strPath.IndexOfAny(Path.GetInvalidPathChars()) != -1)
 				return false;
-			if (Path.IsPathRooted(p_strPath))
+			if (Path.IsPathRooted(p_strPath) && p_strPath.StartsWith(GameInstallationPath) == false)
 				return false;
 			if (p_strPath.Contains(".." + Path.AltDirectorySeparatorChar))
 				return false;
