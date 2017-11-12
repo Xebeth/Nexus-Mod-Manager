@@ -232,7 +232,7 @@ namespace Nexus.Client.TipsManagement
 					string strVersion = xelTip.Attribute("version").Value;
 					try
 					{
-						booPluginOnly = Convert.ToBoolean(xelTip.Attribute("pluginsonly").Value);
+						booPluginOnly = Convert.ToBoolean(xelTip.Attribute("pluginsonly")?.Value);
 					}
 					catch { }
 
